@@ -29,11 +29,12 @@ var articles = {
             content : `
                     <p>
                        This is Rony's article two.
-                   </p>
+                   </p>`
             	  
                         }   
                          
             };
+            
 function createTemplate(data)
 {
     
