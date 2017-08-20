@@ -6,22 +6,33 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = { 
-    ArticleOne: {
-    title:'Article One by Rony',
-    heading: 'Article One',
-    date : 'August 20 2017',
-    content : `
-            <p>
-               This is rony article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
-           </p>
-    	   <p>
-               This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
-           </p> 
-    	   <p>
-               This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
-           </p>`
-                }
-                
+            ArticleOne: {
+            title:'Article One by Rony',
+            heading: 'Article One',
+            date : 'August 20 2017',
+            content : `
+                    <p>
+                       This is rony article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
+                   </p>
+            	   <p>
+                       This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
+                   </p> 
+            	   <p>
+                       This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
+                   </p>`
+                        }
+                        
+            ArticleTwo: {
+            title:'Article Two | Rony',
+            heading: 'Article Two',
+            date : 'August 22 2017',
+            content : `
+                    <p>
+                       This is rony article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
+                   </p>
+            	  
+                        }   
+                        
             };
 function createTemplate(data)
 {
@@ -78,7 +89,7 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(createTemplate(articles.ArticleTwo));
 });
 
 app.get('/article-three', function (req, res) {
