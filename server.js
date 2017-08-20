@@ -11,7 +11,7 @@ var ArticleOne= {
     date : 'August 20 2017',
     content : `
             <p>
-               This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
+               This is rony article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
            </p>
     	   <p>
                This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
