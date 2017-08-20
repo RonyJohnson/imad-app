@@ -20,7 +20,7 @@ var articles = {
             	   <p>
                        This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
                    </p>`
-                        }
+                        },
                         
             ArticleTwo: {
             title:'Article Two | Rony',
@@ -28,7 +28,7 @@ var articles = {
             date : 'August 22 2017',
             content : `
                     <p>
-                       This is rony article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.This is my article one.
+                       This is Rony's article two.
                    </p>
             	  
                         }   
