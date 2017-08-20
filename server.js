@@ -31,6 +31,17 @@ var articles = {
                        This is Rony's article two.
                    </p>`
             	  
+                        },  
+            
+            ArticleThree: {
+            title:'Article Three | Rony',
+            heading: 'Article Three',
+            date : 'August 23 2017',
+            content : `
+                    <p>
+                       This is Rony's article three.
+                   </p>`
+            	  
                         }   
                          
             };
@@ -94,7 +105,8 @@ app.get('/article-two', function (req, res) {
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    res.send(createTemplate(articles.ArticleTwo));
+  //res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
